@@ -9,3 +9,4 @@ let pizza: Pizza = {
 pizza[1] = 'test';
 
 console.log('pizza', pizza);
+// Output: pizza { '1': 'test', type: 'peperonni' }

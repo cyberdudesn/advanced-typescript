@@ -1,0 +1,31 @@
+{
+  "name": "advanced-typescript",
+  "version": "1.0.0",
+  "description": "Advanced Typescript snippets and tricks",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "tsnode": "npx ts-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberdudesn/advanced-typescript.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.9.7"
+  },
+  "author": "Srijesh Nakarmi",
+  "license": "MIT",
+  "homepage": "https://github.com/cyberdudesn/advanced-typescript.git",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "tslib": "^2.3.1"
+  }
+}

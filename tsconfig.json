@@ -1,0 +1,27 @@
+{
+  "include": ["**/*.ts"],
+  "exclude": ["**/*.spec.ts"],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "dist",
+    "typeRoots": ["src/@types", "node_modules/@types"],
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "mapRoot": "/mappings/",
+    // "traceResolution": true,
+    // "diagnostics": true,
+    // "listFiles": true
+    // "listEmittedFiles": true,
+    // "pretty": true
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    // Imports helper functions from tslib
+    "importHelpers": true,
+    "noImplicitAny": true
+  }
+}

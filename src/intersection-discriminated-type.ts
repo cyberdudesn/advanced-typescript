@@ -14,7 +14,7 @@ interface Stripe {
 }
 
 interface Paypal {
-  type: 'paypal'; // Type descriminator
+  type: 'paypal'; // Type discriminator
   email: string;
 }
 

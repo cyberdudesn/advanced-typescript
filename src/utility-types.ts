@@ -43,4 +43,4 @@ const funcReturnObj = async () => {
 };
 
 type FuncResult = Awaited<ReturnType<typeof funcReturnObj>>;
-// FuncResult = { data: 'abc' }
+// FuncResult = { data: string }

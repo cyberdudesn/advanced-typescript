@@ -13,7 +13,7 @@ type IsOptional<T, K extends keyof T> = undefined extends T[K]
   : false;
 
 type OptionalProperties<T> = {
-  [K in keyof T]: IsOptional<T, K> extends true ? T[K] : never;
+  [K in keyof T as IsOptional<T, K> extends true ? K : never]: T[K];
 };
 
 type IsRequiredOfExampleOptional = IsOptional<Example, 'required'>;
@@ -22,11 +22,8 @@ type IsRequiredOfExampleOptional = IsOptional<Example, 'required'>;
 type IsOptionalOfExampleOptional = IsOptional<Example, 'optional'>;
 // true
 
-type OnlyOptionals = OptionalProperties<Example>;
+type OnlyOptionalsOfExample = OptionalProperties<Example>;
 // type OnlyOptionals = {
-//     required: never;
 //     optional?: number;
-//     requiredAsUndefined: never;
-//     requiredWithUndefined: never;
 //     optionalWithUndefined?: number | undefined;
 // }
